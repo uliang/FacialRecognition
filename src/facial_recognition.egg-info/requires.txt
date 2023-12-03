@@ -1,0 +1,9 @@
+flask
+pillow
+mtcnn
+keras-vggface
+sqlalchemy
+python-dotenv
+numpy
+scipy
+tensorflow

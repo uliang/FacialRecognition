@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: facial-recognition
+Version: 0.0.1
+Summary: A toy app illustration a facial recognition login system
+Author-email: Tang U-Liang <uliang.t@help.edu.my>
+Requires-Python: >=3.11
+Requires-Dist: flask
+Requires-Dist: pillow
+Requires-Dist: mtcnn
+Requires-Dist: keras-vggface
+Requires-Dist: sqlalchemy
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tensorflow

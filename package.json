@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }, 
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./static/style/main.css --watch", 
+    "build": "npx tailwindcss -i ./src/input.css -o ./static/style/main.prod.css --minify"
+  }
+}

@@ -1,0 +1,23 @@
+[build-system] 
+requires = ["setuptools"] 
+build-backend = "setuptools.build_meta" 
+
+[project] 
+name = "facial-recognition" 
+version = "0.0.1" 
+requires-python = ">=3.11"
+dependencies = [
+  "flask", 
+  "pillow", 
+  "mtcnn", 
+  "keras-vggface", 
+  "sqlalchemy", 
+  "python-dotenv", 
+  "numpy", 
+  "scipy", 
+  "tensorflow"
+]
+authors = [
+  {name="Tang U-Liang", email="uliang.t@help.edu.my"}
+]
+description = "A toy app illustration a facial recognition login system"

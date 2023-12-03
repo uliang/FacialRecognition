@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block navigation %}
+<div class="mx-3">
+  {% if 'username' in session %}
+  <button><a href="{{url_for('logout_user')}}">Logout</a></button>
+  {% else %}
+  <button><a href="{{ url_for('login_user') }}">Login</a></button>
+  {% endif %}
+</div>
+{% endblock %}
+
+
+{% block body %}
+<div class="relative"><div class="absolute top-0 left-0">
+  {% include 'flashes.html'   %}
+  <button class="bg-red-700 p-5 mt-20 ml-10 rounded-lg"><a class="text-white"
+      href="{{ url_for('protected_resource')}}">Protected Area</a></button>
+
+</div>
+</div><div class="z-0"><img src="{{ url_for('static', filename='assets/HELP gradient.png')}}"
+    alt="Drone shot of HELP University Subang 2 campus">
+
+  {% endblock %}
+</div>

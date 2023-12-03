@@ -1,0 +1,6 @@
+pyproject.toml
+src/facial_recognition.egg-info/PKG-INFO
+src/facial_recognition.egg-info/SOURCES.txt
+src/facial_recognition.egg-info/dependency_links.txt
+src/facial_recognition.egg-info/requires.txt
+src/facial_recognition.egg-info/top_level.txt

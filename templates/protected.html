@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block navigation %}
+<a href="{{ url_for('logout_user')}}">Logout</a>
+{% endblock %}
+
+{% block body %}
+<div class="relative">
+  <p class="text-white p-10 absolute top-0 left-0">Hi, {{user.username}}, you've managed to access some protected material!</p>
+  <img src="{{ url_for('static', filename='assets/facial recognition.jpeg')}}" alt="Poster of a black man with facial recognition overlay">
+</div>
+  {% endblock %}

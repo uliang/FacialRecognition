@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{{ url_for('static', filename='scripts/jquery.js')}}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
+  {% if config['ENV'] != "production" %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css')}}">
+  {% else %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/main.prod.css')}}">
+  {% endif %}
+  <title>Facial Recognition Login System</title>
+</head>
+
+<nav class="bg-black text-white flex p-5 shadow-lg justify-center item-center gap-3 shadow-slate-200 z-20">
+  <h1 class="grow mx-3 text-xl font-bold uppercase"><a href="{{ url_for('main')}}">HELP University Facial Recognition
+      Login
+      System</a></h1>
+  {% block navigation %}
+  {% endblock %}
+</nav>
+
+{% block body %}
+{% endblock %}
+
+<footer class="pt-5 pl-10 bg-black text-white pb-32 h-screen">
+  <span>&copy; 2023 HELP University</span>
+</footer>
+
+</html>
