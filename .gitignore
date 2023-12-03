@@ -3,3 +3,4 @@ __pycache__/
 images/
 node_modules/
 .flaskenv
+.DS_Store/
