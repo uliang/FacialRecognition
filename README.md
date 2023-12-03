@@ -2,7 +2,7 @@
 
 ## Installation 
 
-Create a virtual environment using your faviour virtual environment manager, (I use `conda`) and install the package from github 
+Create a virtual environment using your favourite virtual environment manager, (I use `conda`) and install the package from github 
 
 > `pip install git+https://github.com/uliang/FacialRecognition.git`
 
